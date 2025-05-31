@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.suggestion {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+.explanation {
+  background-color: #f9e0e7;
+  color: #5e3b51;
+}
+.message {
+  display: flex;
+  margin: 10px;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.message.user .bubble {
+  background-color: #cce4ff;
+  color: #000;
+  border-bottom-right-radius: 0;
+}
+
+.message.bot .bubble {
+  background-color: #eeeeee;
+  color: #000;
+  border-bottom-left-radius: 0;
+}
+
+/* 기존 정의된 색상 클래스도 유지 */
+.warning {
+  background-color: #fff3cd !important;
+  color: #856404 !important;
+}
+
+.suggestion {
+  background-color: #e0f7fa !important;
+  color: #00796b !important;
+}
+
+.explanation {
+  background-color: #f9e0e7 !important;
+  color: #5e3b51 !important;
+}
